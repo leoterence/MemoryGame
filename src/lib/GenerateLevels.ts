@@ -36,7 +36,7 @@ export const getlevel = (difficulte: Diff): Niveau|undefined => {
 export const getdifficult=()=>{
     return GenerateLevels().flatMap(lev=>{
         return {
-            slug:lev.difficulté
+            slug:lev.difficulté as string
         }
     })
 }
